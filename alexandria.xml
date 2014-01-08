@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book xmlns="http://docbook.org/ns/docbook" xml:id="alexandria" version="5.0">
+  <info>
+    <title>Alexandria</title>
+    <subtitle>Company library</subtitle>
+  </info>
+  <chapter xml:id="properties">
+    <title>Properties</title>
+    <para>Listing of properties</para>
+  </chapter>
+  <chapter xml:id="requirements">
+    <title>Requirements</title>
+    <para>Requirements of the application</para>
+  </chapter>
+  <chapter xml:id="ubiquitous-language">
+    <title>Ubiquitous language</title>
+    <para>List of terms making up the Ubiquitous Language of Alexandria project</para>
+  </chapter>
+  <chapter xml:id="steps">
+    <title>Steps</title>
+    <para>Plan of development of the application</para>
+  </chapter>
+</book>
