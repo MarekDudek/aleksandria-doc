@@ -16,7 +16,73 @@
   </info>
   <chapter xml:id="properties">
     <title>Properties</title>
-    <para>Listing of properties</para>
+    <itemizedlist>
+      <title>List of properties</title>
+      <listitem>
+        <para><emphasis>Package: </emphasis> <code>biz.interretis.alexandria</code></para>
+      </listitem>
+      <listitem>
+        <para><emphasis>Methodology: </emphasis>Design-driven development</para>
+      </listitem>
+      <listitem>
+        <itemizedlist>
+          <title>Technological stack</title>
+          <listitem>
+            <itemizedlist>
+              <title>Struts 1</title>
+              <listitem>
+                <para>Tiles</para>
+              </listitem>
+              <listitem>
+                <para>Tags</para>
+              </listitem>
+              <listitem>
+                <para>Validation</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+          <listitem>
+            <itemizedlist>
+              <title>JPA 2</title>
+              <listitem>
+                <para>Validation API</para>
+              </listitem>
+              <listitem>
+                <para>Criteria API</para>
+              </listitem>
+              <listitem>
+                <para>Eclipselink</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+          <listitem>
+            <itemizedlist>
+              <title>Spring</title>
+              <listitem>
+                <para>Spring Security</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+          <listitem>
+            <itemizedlist>
+              <title>OSGi</title>
+              <listitem>
+                <para>Spring Dynamic Modules - Eclipse Blueprint</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+          <listitem>
+            <para>Test NG</para>
+          </listitem>
+          <listitem>
+            <para>Java Servlet (&lt;3.0) &amp; JSP &amp; JSTL</para>
+          </listitem>
+          <listitem>
+            <para>Tomcat? Weblogic?</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </itemizedlist>
   </chapter>
   <chapter xml:id="requirements">
     <title>Requirements</title>
