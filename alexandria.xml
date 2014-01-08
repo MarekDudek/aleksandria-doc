@@ -3,6 +3,13 @@
   <info>
     <title>Alexandria</title>
     <subtitle>Company library</subtitle>
+    <author>
+      <personname>Marek Dudek</personname>
+      <email>marek.dudek@gmail.com</email>
+    </author>
+    <abstract>
+      <para>Documentation for project Alexandria - application for management of a company library</para>
+    </abstract>
   </info>
   <chapter xml:id="properties">
     <title>Properties</title>
