@@ -7,6 +7,9 @@
       <personname>Marek Dudek</personname>
       <email>marek.dudek@gmail.com</email>
     </author>
+    <pubdate>
+      <?dbtimestamp format="A, d of B, Y"?>
+    </pubdate>
     <abstract>
       <para>Documentation for project Alexandria - application for management of a company library</para>
     </abstract>
