@@ -29,10 +29,10 @@
       </listitem>
       <listitem>
         <itemizedlist>
-          <title>Technological stack</title>
+          <para>Technological stack</para>
           <listitem>
             <itemizedlist>
-              <title>Struts 1</title>
+              <para>Struts 1</para>
               <listitem>
                 <para>Tiles</para>
               </listitem>
@@ -46,7 +46,7 @@
           </listitem>
           <listitem>
             <itemizedlist>
-              <title>JPA 2</title>
+              <para>JPA 2</para>
               <listitem>
                 <para>Validation API</para>
               </listitem>
@@ -60,7 +60,7 @@
           </listitem>
           <listitem>
             <itemizedlist>
-              <title>Spring</title>
+              <para>Spring</para>
               <listitem>
                 <para>Spring Security</para>
               </listitem>
@@ -68,7 +68,7 @@
           </listitem>
           <listitem>
             <itemizedlist>
-              <title>OSGi</title>
+              <para>OSGi</para>
               <listitem>
                 <para>Spring Dynamic Modules - Eclipse Blueprint</para>
               </listitem>
