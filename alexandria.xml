@@ -19,7 +19,10 @@
     <itemizedlist>
       <title>List of properties</title>
       <listitem>
-        <para><emphasis>Package: </emphasis> <code>biz.interretis.alexandria</code></para>
+        <para>
+          <emphasis>Package: </emphasis>
+          <code>biz.interretis.alexandria</code>
+        </para>
       </listitem>
       <listitem>
         <para><emphasis>Methodology: </emphasis>Design-driven development</para>
@@ -86,7 +89,35 @@
   </chapter>
   <chapter xml:id="requirements">
     <title>Requirements</title>
-    <para>Requirements of the application</para>
+    <itemizedlist>
+      <title>Requirements of the application</title>
+      <listitem>
+        <para>browsing Books and Libraries</para>
+      </listitem>
+      <listitem>
+        <itemizedlist>
+          <title>CRUD</title>
+          <listitem>
+            <para>Books</para>
+          </listitem>
+          <listitem>
+            <para>Libraries</para>
+          </listitem>
+          <listitem>
+            <para>Users</para>
+          </listitem>
+          <listitem>
+            <para>Teams</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+      <listitem>
+        <para>Borrowing and Returning Books</para>
+      </listitem>
+      <listitem>
+        <para>Authentication and authorization</para>
+      </listitem>
+    </itemizedlist>
   </chapter>
   <chapter xml:id="ubiquitous-language">
     <title>Ubiquitous language</title>
