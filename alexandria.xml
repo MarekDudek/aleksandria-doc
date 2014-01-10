@@ -96,18 +96,74 @@
       </listitem>
       <listitem>
         <itemizedlist>
-          <title>CRUD</title>
+          <para>CRUD</para>
           <listitem>
-            <para>Books</para>
+            <itemizedlist>
+              <para>Books</para>
+              <listitem>
+                <itemizedlist>
+                  <para>add and remove subsequent Copy of existing one</para>
+                  <listitem>
+                    <para>propose switching between "Add Copy of existing" and "Create new"</para>
+                  </listitem>
+                  <listitem>
+                    <para>on removing multi-Copied only decrease copy count</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+              <listitem>
+                <itemizedlist>
+                  <para>add and remove subsequent Copy of existing one</para>
+                  <listitem>
+                    <para>allow relating newly created as Versions</para>
+                  </listitem>
+                  <listitem>
+                    <para>add middle Version of existing one</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+            </itemizedlist>
           </listitem>
           <listitem>
             <para>Libraries</para>
+            <itemizedlist>
+              <listitem>
+                <para>adding Books</para>
+              </listitem>
+            </itemizedlist>
           </listitem>
           <listitem>
             <para>Users</para>
+            <itemizedlist>
+              <listitem>
+                <para>Borrowing and Returning Books</para>
+              </listitem>
+              <listitem>
+                <para>adding to a Team</para>
+              </listitem>
+              <listitem>
+                <para>letting Borrow a Book</para>
+              </listitem>
+            </itemizedlist>
           </listitem>
           <listitem>
             <para>Teams</para>
+            <itemizedlist>
+              <listitem>
+                <para>has members, organizes them, aggregate root</para>
+              </listitem>
+              <listitem>
+                <para>has Leader -&gt; User</para>
+                <itemizedlist>
+                  <listitem>
+                    <para>Leader manages Team owenership</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+              <listitem>
+                <para>aggregate root for Users</para>
+              </listitem>
+            </itemizedlist>
           </listitem>
         </itemizedlist>
       </listitem>
