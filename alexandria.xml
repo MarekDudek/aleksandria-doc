@@ -1,186 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <article xmlns="http://docbook.org/ns/docbook" xml:id="alexandria" version="5.0">
-  <info>
-    <title>Alexandria</title>
-    <subtitle>Company library</subtitle>
-    <author>
-      <personname>Marek Dudek</personname>
-      <email>marek.dudek@gmail.com</email>
-    </author>
-    <pubdate>
-      <?dbtimestamp format="A, d of B, Y"?>
-    </pubdate>
-    <abstract>
-      <para>Documentation for project Alexandria - application for management of a company library</para>
-    </abstract>
-  </info>
-  <section xml:id="properties">
-    <title>Properties</title>
-    <itemizedlist>
-      <title>List of properties</title>
-      <listitem>
-        <para>
-          <emphasis>Package: </emphasis>
-          <code>biz.interretis.alexandria</code>
-        </para>
-      </listitem>
-      <listitem>
-        <para><emphasis>Methodology: </emphasis>Design-driven development</para>
-      </listitem>
-      <listitem>
-        <itemizedlist>
-          <para>Technological stack</para>
-          <listitem>
-            <itemizedlist>
-              <para>Struts 1</para>
-              <listitem>
-                <para>Tiles</para>
-              </listitem>
-              <listitem>
-                <para>Tags</para>
-              </listitem>
-              <listitem>
-                <para>Validation</para>
-              </listitem>
-            </itemizedlist>
-          </listitem>
-          <listitem>
-            <itemizedlist>
-              <para>JPA 2</para>
-              <listitem>
-                <para>Validation API</para>
-              </listitem>
-              <listitem>
-                <para>Criteria API</para>
-              </listitem>
-              <listitem>
-                <para>Eclipselink</para>
-              </listitem>
-            </itemizedlist>
-          </listitem>
-          <listitem>
-            <itemizedlist>
-              <para>Spring</para>
-              <listitem>
-                <para>Spring Security</para>
-              </listitem>
-            </itemizedlist>
-          </listitem>
-          <listitem>
-            <itemizedlist>
-              <para>OSGi</para>
-              <listitem>
-                <para>Spring Dynamic Modules - Eclipse Blueprint</para>
-              </listitem>
-            </itemizedlist>
-          </listitem>
-          <listitem>
-            <para>Test NG</para>
-          </listitem>
-          <listitem>
-            <para>Java Servlet (&lt;3.0) &amp; JSP &amp; JSTL</para>
-          </listitem>
-          <listitem>
-            <para>Tomcat? Weblogic?</para>
-          </listitem>
-        </itemizedlist>
-      </listitem>
-    </itemizedlist>
-  </section>
-  <section xml:id="requirements">
-    <title>Requirements</title>
-    <itemizedlist>
-      <title>Requirements of the application</title>
-      <listitem>
-        <para>browsing Books and Libraries</para>
-      </listitem>
-      <listitem>
-        <itemizedlist>
-          <para>CRUD</para>
-          <listitem>
-            <itemizedlist>
-              <para>Books</para>
-              <listitem>
-                <itemizedlist>
-                  <para>add and remove subsequent Copy of existing one</para>
-                  <listitem>
-                    <para>propose switching between "Add Copy of existing" and "Create new"</para>
-                  </listitem>
-                  <listitem>
-                    <para>on removing multi-Copied only decrease copy count</para>
-                  </listitem>
-                </itemizedlist>
-              </listitem>
-              <listitem>
-                <itemizedlist>
-                  <para>add and remove subsequent Copy of existing one</para>
-                  <listitem>
-                    <para>allow relating newly created as Versions</para>
-                  </listitem>
-                  <listitem>
-                    <para>add middle Version of existing one</para>
-                  </listitem>
-                </itemizedlist>
-              </listitem>
-            </itemizedlist>
-          </listitem>
-          <listitem>
-            <para>Libraries</para>
-            <itemizedlist>
-              <listitem>
-                <para>adding Books</para>
-              </listitem>
-            </itemizedlist>
-          </listitem>
-          <listitem>
-            <para>Users</para>
-            <itemizedlist>
-              <listitem>
-                <para>Borrowing and Returning Books</para>
-              </listitem>
-              <listitem>
-                <para>adding to a Team</para>
-              </listitem>
-              <listitem>
-                <para>letting Borrow a Book</para>
-              </listitem>
-            </itemizedlist>
-          </listitem>
-          <listitem>
-            <para>Teams</para>
-            <itemizedlist>
-              <listitem>
-                <para>has members, organizes them, aggregate root</para>
-              </listitem>
-              <listitem>
-                <para>has Leader -&gt; User</para>
-                <itemizedlist>
-                  <listitem>
-                    <para>Leader manages Team owenership</para>
-                  </listitem>
-                </itemizedlist>
-              </listitem>
-              <listitem>
-                <para>aggregate root for Users</para>
-              </listitem>
-            </itemizedlist>
-          </listitem>
-        </itemizedlist>
-      </listitem>
-      <listitem>
-        <para>Borrowing and Returning Books</para>
-      </listitem>
-      <listitem>
-        <para>Authentication and authorization</para>
-      </listitem>
-    </itemizedlist>
-  </section>
-  <section xml:id="ubiquitous-language">
-    <title>Ubiquitous language</title>
-    <para>List of terms making up the Ubiquitous Language of Alexandria project</para>
-  </section>
-  <section xml:id="steps">
-    <title>Steps</title>
-    <para>Plan of development of the application</para>
-  </section>
+
+	<info>
+		<title>Alexandria</title>
+		<subtitle>Company library</subtitle>
+		<author> <personname>Marek Dudek</personname> <email>marek.dudek@gmail.com</email> </author>
+		<pubdate> <?dbtimestamp format="A, d of B, Y"?> </pubdate>
+		<abstract>
+			<para>Documentation for project Alexandria - application for management of a company library. Demonstration of Domain Driven Design methodology</para>
+		</abstract>
+	</info>
+
+	<section xml:id="properties"> <title>Properties</title>
+		<itemizedlist> <title>List of properties</title>
+			<listitem> <para> <emphasis>Package: </emphasis> <code>biz.interretis.alexandria</code> </para> </listitem>
+			<listitem> <para><emphasis>Methodology: </emphasis>Design-driven development</para> </listitem>
+			<listitem>
+				<itemizedlist> <para>Technological stack</para>
+					<listitem>
+						<itemizedlist> <para>Struts 1</para>
+							<listitem> <para>Tiles</para> </listitem>
+							<listitem> <para>Tags</para> </listitem>
+							<listitem> <para>Validation</para> </listitem>
+						</itemizedlist>
+					</listitem>
+					<listitem>
+						<itemizedlist> <para>JPA 2</para>
+							<listitem> <para>Validation API</para> </listitem>
+							<listitem> <para>Criteria API</para> </listitem>
+							<listitem> <para>Eclipselink</para> </listitem>
+						</itemizedlist>
+					</listitem>
+					<listitem>
+						<itemizedlist> <para>Spring</para>
+							<listitem> <para>Spring Security</para> </listitem>
+						</itemizedlist>
+					</listitem>
+					<listitem>
+						<itemizedlist> <para>OSGi</para>
+							<listitem> <para>Spring Dynamic Modules - Eclipse Blueprint</para> </listitem>
+						</itemizedlist>
+					</listitem>
+					<listitem> <para>Test NG</para> </listitem>
+					<listitem> <para>Java Servlet (&lt;3.0) &amp; JSP &amp; JSTL</para> </listitem>
+					<listitem> <para>Tomcat? Weblogic?</para> </listitem>
+				</itemizedlist>
+			</listitem>
+		</itemizedlist>
+	</section>
+
+	<section xml:id="requirements"> <title>Requirements</title>
+		<itemizedlist> <title>Requirements of the application</title>
+			<listitem> <para>browsing Books and Libraries</para> </listitem>
+			<listitem>
+				<itemizedlist> <para>CRUD</para>
+					<listitem>
+						<itemizedlist> <para>Books</para>
+							<listitem>
+								<itemizedlist> <para>add and remove subsequent Copy of existing one</para>
+									<listitem> <para>propose switching between "Add Copy of existing" and "Create new"</para> </listitem>
+									<listitem> <para>on removing multi-Copied only decrease copy count</para> </listitem>
+								</itemizedlist>
+							</listitem>
+							<listitem>
+								<itemizedlist> <para>add and remove subsequent Copy of existing one</para>
+									<listitem> <para>allow relating newly created as Versions</para> </listitem>
+									<listitem> <para>add middle Version of existing one</para> </listitem>
+								</itemizedlist>
+							</listitem>
+						</itemizedlist>
+					</listitem>
+					<listitem> <para>Libraries</para>
+						<itemizedlist>
+							<listitem> <para>adding Books</para> </listitem>
+						</itemizedlist>
+					</listitem>
+					<listitem> <para>Users</para>
+						<itemizedlist>
+							<listitem> <para>Borrowing and Returning Books</para> </listitem>
+							<listitem> <para>adding to a Team</para> </listitem>
+							<listitem> <para>letting Borrow a Book</para> </listitem>
+						</itemizedlist>
+					</listitem>
+					<listitem> <para>Teams</para>
+						<itemizedlist>
+							<listitem> <para>has members, organizes them, aggregate root</para> </listitem>
+							<listitem> <para>has Leader -&gt; User</para>
+								<itemizedlist>
+									<listitem> <para>Leader manages Team owenership</para> </listitem>
+								</itemizedlist>
+							</listitem>
+							<listitem> <para>aggregate root for Users</para> </listitem>
+						</itemizedlist>
+					</listitem>
+				</itemizedlist>
+			</listitem>
+			<listitem> <para>Borrowing and Returning Books</para> </listitem>
+			<listitem> <para>Authentication and authorization</para> </listitem>
+		</itemizedlist>
+	</section>
+
+	<section xml:id="ubiquitous-language"> <title>Ubiquitous language</title>
+		<para>List of terms making up the Ubiquitous Language of Alexandria project</para>
+	</section>
+
+	<section xml:id="steps"> <title>Steps</title>
+		<para>Plan of development of the application</para>
+	</section>
+
 </article>
