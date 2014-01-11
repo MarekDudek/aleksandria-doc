@@ -242,7 +242,31 @@
 			</glossentry>
 			<glossentry xml:id="search">
 				<glossterm>Search</glossterm>
-				<glossdef><para>Books</para></glossdef>
+				<glossdef>
+					<itemizedlist>
+						<listitem> <para>Books</para> 
+							<itemizedlist>
+								<listitem> <para>title</para> </listitem>
+								<listitem> <para>author</para> </listitem>
+								<listitem> <para>description</para> </listitem>
+								<listitem> <para>edition date</para> </listitem>
+								<listitem> <para>ISBN</para> 
+									<itemizedlist>
+										<listitem> <para> multiple formats</para> </listitem>
+										<listitem> <para> multiple ISBNs (, 2 on Amazon)</para> </listitem>
+									</itemizedlist>
+								</listitem>
+							</itemizedlist>
+						</listitem>
+						<listitem> <para>Users</para> 
+							<itemizedlist>
+								<listitem> <para>Name</para> </listitem>
+								<listitem> <para>Surname</para> </listitem>
+								<listitem> <para>Team</para> </listitem>
+							</itemizedlist>
+						</listitem>
+					</itemizedlist>
+				</glossdef>
 			</glossentry>
 		</glossary>
 	</section>
