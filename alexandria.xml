@@ -8,7 +8,7 @@
 		<author> <personname>Marek Dudek</personname> <email>marek.dudek@gmail.com</email> </author>
 		<pubdate> <?dbtimestamp format="A, d of B, Y"?> </pubdate>
 		<abstract>
-			<para>Documentation for project Alexandria - application for management of a company library. Demonstration of Domain Driven Design methodology</para>
+			<para>Documentation for project Alexandria - application for management of a company library. Demonstration of Domain Driven Design methodology.</para>
 		</abstract>
 	</info>
 
@@ -111,7 +111,48 @@
 		<glossary> 
 			<glossentry xml:id="book">
 				<glossterm>Book</glossterm>
-				<glossdef><para>belongs to Library</para></glossdef>
+				<glossdef>
+					<itemizedlist>
+						<listitem> <para>belongs to Library</para> 
+							<itemizedlist>
+								<listitem> <para>shouldn't have to know about it</para> </listitem>
+							</itemizedlist>
+						</listitem>
+						<listitem> <para>multiple indistinguishable Copies</para> 
+							<itemizedlist>
+								<listitem> <para>Copy identification?</para> </listitem>
+								<listitem> <para>two Copies may belong to multiple Libraries</para> </listitem>
+							</itemizedlist>
+						</listitem>
+						<listitem> <para>progressive Versions</para> 
+							<itemizedlist>
+								<listitem> <para>relations between Versions</para> 
+									<itemizedlist>
+										<listitem> <para>order number</para> </listitem>
+										<listitem> <para>double-sided linking?</para> </listitem>
+										<listitem> <para>both or single?</para> </listitem>
+									</itemizedlist>
+								</listitem>
+							</itemizedlist>
+						</listitem>
+						<listitem> <para>relation to Author</para> 
+							<itemizedlist>
+								<listitem> <para>m-2-m, how to constrain it?</para> </listitem>
+							</itemizedlist>
+						</listitem>
+						<listitem> <para>aggregate root, controls creation of Versions and Copies</para> 
+							<itemizedlist>
+								<listitem> <para>reconsider making it completely obsolete</para> </listitem>
+							</itemizedlist>
+						</listitem>
+						<listitem> <para>connection Copy with Versions</para> 
+							<itemizedlist>
+								<listitem> <para>Copy is always created, Version is optionally created as soon as another copy created</para> </listitem>
+								<listitem> <para>removing Books should keep Versions</para> </listitem>
+							</itemizedlist>
+						</listitem>
+					</itemizedlist>
+				</glossdef>
 			</glossentry>
 			<glossentry xml:id="version">
 				<glossterm>Version</glossterm>
