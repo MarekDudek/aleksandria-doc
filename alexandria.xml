@@ -156,31 +156,89 @@
 			</glossentry>
 			<glossentry xml:id="version">
 				<glossterm>Version</glossterm>
-				<glossdef><para>what does it share with Book?</para></glossdef>
+				<glossdef>
+					<itemizedlist>
+						<listitem> <para>what does it share with Book?</para> </listitem>
+						<listitem> <para>should it know about Books?</para> </listitem>
+					</itemizedlist>
+				</glossdef>
 			</glossentry>
 			<glossentry xml:id="copy">
 				<glossterm>Copy</glossterm>
-				<glossdef><para>borrowed and returned by Users</para></glossdef>
+				<glossdef>
+					<itemizedlist>
+						<listitem> <para>borrowed and returned by Users</para> </listitem>
+						<listitem> <para>statuses?</para> 
+							<itemizedlist>
+								<listitem> <para>free</para> </listitem>
+								<listitem> <para>borrowed</para> </listitem>
+								<listitem> <para>lost</para> </listitem>
+								<listitem> <para>arriving - possible booking in advance</para> </listitem>
+								<listitem> <para>contested - possibly multiple Users</para> </listitem>
+							</itemizedlist>
+						</listitem>
+					</itemizedlist>
+				</glossdef>
 			</glossentry>
 			<glossentry xml:id="library">
 				<glossterm>Library</glossterm>
-				<glossdef><para>posseses Copies</para></glossdef>
+				<glossdef>
+					<itemizedlist>
+						<listitem> <para>posseses Copies</para> </listitem>
+						<listitem> <para>belongs to Teams</para> </listitem>
+					</itemizedlist>
+				</glossdef>
 			</glossentry>
 			<glossentry xml:id="author">
 				<glossterm>Author</glossterm>
-				<glossdef><para>relation to Books</para></glossdef>
+				<glossdef>
+					<itemizedlist>
+						<listitem> <para>relation to Books</para> 
+							<itemizedlist>
+								<listitem> <para>single Book written by multiple Authors</para> </listitem>
+								<listitem> <para>author to multiple Books</para> </listitem>
+								<listitem> <para>how to ???</para> </listitem>
+							</itemizedlist>
+						</listitem>
+					</itemizedlist>
+				</glossdef>
 			</glossentry>
 			<glossentry xml:id="user">
 				<glossterm>User</glossterm>
-				<glossdef><para>person (like Author)</para></glossdef>
+				<glossdef>
+					<itemizedlist>
+						<listitem> <para>person (like Author)</para> </listitem>
+						<listitem> <para>Name</para> </listitem>
+						<listitem> <para>Surname</para> </listitem>
+						<listitem> <para>e-mail</para> </listitem>
+						<listitem> <para>belongs to a Team but shouldn't know it</para> </listitem>
+					</itemizedlist>
+				</glossdef>
 			</glossentry>
 			<glossentry xml:id="borrower">
 				<glossterm>Borrower</glossterm>
-				<glossdef><para>posseses a Copy and offers it for Borrowing</para></glossdef>
+				<glossdef>
+					<itemizedlist>
+						<listitem> <para>posseses a Copy and offers it for Borrowing</para> </listitem>
+						<listitem> <para>may be Lender simutaneously</para> </listitem>
+						<listitem> <para>User (, Authorizer User)</para> </listitem>
+						<listitem> <para>Java interface?</para> 
+							<itemizedlist>
+								<listitem> <para>User JSP tag for informations related to being in this Role</para> </listitem>
+							</itemizedlist>
+						</listitem>
+						<listitem> <para>Security Role?</para> </listitem>
+					</itemizedlist>
+				</glossdef>
 			</glossentry>
 			<glossentry xml:id="lender">
 				<glossterm>Lender</glossterm>
-				<glossdef><para>Typically Team, sometimes User (Library for Copies of general and multi-topic Books)</para></glossdef>
+				<glossdef>
+					<itemizedlist>
+						<listitem> <para>Typically Team, sometimes User (Library for Copies of general and multi-topic Books)</para> </listitem> 
+						<listitem> <para>Java interface or Security Role?</para> </listitem> 
+					</itemizedlist>
+				</glossdef>
 			</glossentry>
 			<glossentry xml:id="search">
 				<glossterm>Search</glossterm>
