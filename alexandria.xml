@@ -52,35 +52,40 @@
 
 	<section xml:id="requirements"> <title>Requirements</title>
 		<itemizedlist> <title>Requirements of the application</title>
-			<listitem> <para>browsing Books and Libraries</para> </listitem>
+			<listitem> 
+				<para>browsing 
+					<glossterm baseform="Book" linkend="book">Books</glossterm> and 
+					<glossterm baseform="Library" linkend="library">Libraries</glossterm>
+				</para> 
+			</listitem>
 			<listitem>
 				<itemizedlist> <para>CRUD</para>
 					<listitem>
-						<itemizedlist> <para>Books</para>
+						<itemizedlist> <para><glossterm baseform="Book" linkend="book">Books</glossterm></para>
 							<listitem>
-								<itemizedlist> <para>add and remove subsequent Copy of existing one</para>
+								<itemizedlist> <para>add and remove subsequent <glossterm linkend="copy">Copy</glossterm> of existing one</para>
 									<listitem> <para>propose switching between "Add Copy of existing" and "Create new"</para> </listitem>
 									<listitem> <para>on removing multi-Copied only decrease copy count</para> </listitem>
 								</itemizedlist>
 							</listitem>
 							<listitem>
-								<itemizedlist> <para>add and remove subsequent Copy of existing one</para>
+								<itemizedlist> <para>add and remove subsequent <glossterm linkend="copy">Copy</glossterm> of existing one</para>
 									<listitem> <para>allow relating newly created as Versions</para> </listitem>
 									<listitem> <para>add middle Version of existing one</para> </listitem>
 								</itemizedlist>
 							</listitem>
 						</itemizedlist>
 					</listitem>
-					<listitem> <para>Libraries</para>
+					<listitem> <para><glossterm baseform="Library" linkend="library">Libraries</glossterm></para>
 						<itemizedlist>
-							<listitem> <para>adding Books</para> </listitem>
+							<listitem> <para>adding <glossterm baseform="Book" linkend="book">Books</glossterm></para> </listitem>
 						</itemizedlist>
 					</listitem>
 					<listitem> <para>Users</para>
 						<itemizedlist>
-							<listitem> <para>Borrowing and Returning Books</para> </listitem>
+							<listitem> <para>Borrowing and Returning <glossterm baseform="Book" linkend="book">Books</glossterm></para> </listitem>
 							<listitem> <para>adding to a Team</para> </listitem>
-							<listitem> <para>letting Borrow a Book</para> </listitem>
+							<listitem> <para>letting Borrow a <glossterm baseform="Book" linkend="book">Books</glossterm></para> </listitem>
 						</itemizedlist>
 					</listitem>
 					<listitem> <para>Teams</para>
@@ -96,13 +101,51 @@
 					</listitem>
 				</itemizedlist>
 			</listitem>
-			<listitem> <para>Borrowing and Returning Books</para> </listitem>
+			<listitem> <para>Borrowing and Returning <glossterm baseform="Book" linkend="book">Books</glossterm></para> </listitem>
 			<listitem> <para>Authentication and authorization</para> </listitem>
 		</itemizedlist>
 	</section>
 
 	<section xml:id="ubiquitous-language"> <title>Ubiquitous language</title>
 		<para>List of terms making up the Ubiquitous Language of Alexandria project</para>
+		<glossary> 
+			<glossentry xml:id="book">
+				<glossterm>Book</glossterm>
+				<glossdef><para>belongs to Library</para></glossdef>
+			</glossentry>
+			<glossentry xml:id="version">
+				<glossterm>Version</glossterm>
+				<glossdef><para>what does it share with Book?</para></glossdef>
+			</glossentry>
+			<glossentry xml:id="copy">
+				<glossterm>Copy</glossterm>
+				<glossdef><para>borrowed and returned by Users</para></glossdef>
+			</glossentry>
+			<glossentry xml:id="library">
+				<glossterm>Library</glossterm>
+				<glossdef><para>posseses Copies</para></glossdef>
+			</glossentry>
+			<glossentry xml:id="author">
+				<glossterm>Author</glossterm>
+				<glossdef><para>relation to Books</para></glossdef>
+			</glossentry>
+			<glossentry xml:id="user">
+				<glossterm>User</glossterm>
+				<glossdef><para>person (like Author)</para></glossdef>
+			</glossentry>
+			<glossentry xml:id="borrower">
+				<glossterm>Borrower</glossterm>
+				<glossdef><para>posseses a Copy and offers it for Borrowing</para></glossdef>
+			</glossentry>
+			<glossentry xml:id="lender">
+				<glossterm>Lender</glossterm>
+				<glossdef><para>Typically Team, sometimes User (Library for Copies of general and multi-topic Books)</para></glossdef>
+			</glossentry>
+			<glossentry xml:id="search">
+				<glossterm>Search</glossterm>
+				<glossdef><para>Books</para></glossdef>
+			</glossentry>
+		</glossary>
 	</section>
 
 	<section xml:id="steps"> <title>Steps</title>
