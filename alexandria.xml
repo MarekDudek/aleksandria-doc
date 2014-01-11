@@ -272,7 +272,46 @@
 	</section>
 
 	<section xml:id="steps"> <title>Steps</title>
-		<para>Plan of development of the application</para>
+		<procedure>
+			<title>Plan of development of the application</title>
+			<step><para>rewrite to text format</para>
+				<substeps>
+					<step><para>divide to separate documents</para></step>
+					<step><para>allow adding pictures</para></step>
+				</substeps> 
+			</step>
+			<step><para>navigation map?</para>
+				<substeps>
+					<step><para>would allow taking User's point of view</para></step>
+				</substeps>
+			</step>
+			<step><para>diagrams of instances and classes</para></step>
+			<step><para>diagrams of interactions during use-cases</para>
+				<substeps>
+					<step><para>between Domain and Infrastructure tiers</para></step>
+					<step><para>between Web and Domain tiers</para></step>
+				</substeps>
+			</step>
+			<step><para>mechanism for establishing possible User's operations availability during maintenance at the start of the application (with empty DB)</para></step>
+			<step><para>distinguishing Query from Command</para></step>
+			<step><para>distingsuishing Entities from Value Objects</para></step>
+			<step><para>use-cases as tests</para>
+				<substeps>
+					<step><para>unit test of Domain, including Factories, Services and Repositories</para>
+						<substeps>
+							<step><para>from the point of view of User (/Web controller?)</para></step>
+							<step><para>mock integration with Infrastructure layer</para></step>
+							<step><para>Distill interface between web and domain</para>
+								<substeps>
+									<step><para>Java interface used in custom JSP tags?</para></step>
+								</substeps>
+							</step>
+						</substeps>
+					</step>
+					<step><para>integration test with some in-memory DB?</para></step>
+				</substeps>
+			</step>
+		</procedure>
 	</section>
 
 </article>
