@@ -69,7 +69,7 @@
 								</itemizedlist>
 							</listitem>
 							<listitem>
-								<itemizedlist> <para>add and remove subsequent <glossterm linkend="copy">Copy</glossterm> of existing one</para>
+								<itemizedlist> <para>add and remove subsequent <glossterm linkend="version">Version</glossterm> of existing one</para>
 									<listitem> <para>allow relating newly created as Versions</para> </listitem>
 									<listitem> <para>add middle Version of existing one</para> </listitem>
 								</itemizedlist>
