@@ -314,4 +314,63 @@
 		</procedure>
 	</section>
 
+	<section xml:id="use-cases"> <title>Use-cases</title>
+		<orderedlist> 
+			<listitem><para>Primary use-cases. Related to borrowing and returning of the books and of managing them. They make a library.</para>
+				<orderedlist>
+					<listitem>	
+						<para>Books that belong to a library</para>
+						<orderedlist>
+							<listitem><para>Browsing books in library</para></listitem>
+							<listitem><para>Borrowing books in library</para></listitem>
+							<listitem><para>Returning a book from library</para></listitem>
+							<listitem><para>Adding a book to a library</para></listitem>
+							<listitem><para>Removing a book from a library</para></listitem>
+						</orderedlist>
+					</listitem>	
+					<listitem><para>Books that belong to individual users</para>
+						<orderedlist>
+							<listitem><para>Browsing books in library</para></listitem>
+							<listitem><para>Borrowing books in library</para></listitem>
+							<listitem><para>Returning a book from library</para></listitem>
+							<listitem><para>Adding a book to a library</para></listitem>
+							<listitem><para>Removing a book from a library</para></listitem>
+						</orderedlist>
+						<para>Treat them like separate uses-cases or make them extend library book use-cases?</para>
+						<para>Go for multiple libraries from the beginning or start with single? Kind of artificially prevents developing deep model of a book.</para>
+					</listitem>	
+					<listitem><para>Authorisation and authorisation. </para>
+						<para>
+							Neccessary for any restrictions involved in making borrowing and lending an honest transaction. 
+							Users cannot possess possibility of a theft by claiming that the book was returned. 
+							Users also cannot frame other users by claiming that they borrowed.
+						</para>
+						<orderedlist>
+							<listitem><para>Domain of authentication system</para>
+								<orderedlist>
+									<listitem><para>Users</para></listitem>
+									<listitem><para>Teams</para></listitem>
+									<listitem><para>Roles</para></listitem>
+								</orderedlist>
+								<para>
+									Model has to be plugable to make it possible use external authentication/authentication system. 
+									It would be comfortable if it was also suitable for chosen technlogy, probably Spring Security (ACEGI).
+								</para>
+							</listitem>
+
+						</orderedlist>
+					</listitem>
+				</orderedlist>
+			</listitem>
+			<listitem><para>Secondary use-cases.</para>
+				<orderedlist>
+					<listitem><para>Copy management</para></listitem>
+					<listitem><para>Edition management</para></listitem>
+					<listitem><para>History of borrowing</para></listitem>
+					<listitem><para>Amazon API integration. Book information, reviews.</para></listitem>
+				</orderedlist>
+			</listitem>
+		</orderedlist>
+	</section>
+
 </article>
