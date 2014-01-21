@@ -338,6 +338,7 @@
 						</orderedlist>
 						<para>Treat them like separate uses-cases or make them extend library book use-cases?</para>
 						<para>Go for multiple libraries from the beginning or start with single? Kind of artificially prevents developing deep model of a book.</para>
+						<para>Both borrowing and returning has to involve interactions by both parties so as to prevent frauds.</para>
 					</listitem>	
 					<listitem><para>Authorisation and authorisation. </para>
 						<para>
@@ -382,6 +383,14 @@
 					<listitem><para>Announcing bought Book</para>
 						<orderedlist> 
 							<listitem><para>Waitng list for a Book</para></listitem>
+						</orderedlist> 
+					</listitem>
+					<listitem><para>Notifications for users</para>
+						<orderedlist> 
+							<listitem><para>Book on a waiting list is available</para></listitem>
+							<listitem><para>Long time elapsed since a Book was borrowed</para></listitem>
+							<listitem><para>New book is available</para></listitem>
+							<listitem><para>New book is announced as bought</para></listitem>
 						</orderedlist> 
 					</listitem>
 					<listitem><para>Amazon API integration. Book information, reviews.</para></listitem>
