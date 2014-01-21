@@ -366,7 +366,24 @@
 				<orderedlist>
 					<listitem><para>Copy management</para></listitem>
 					<listitem><para>Edition management</para></listitem>
-					<listitem><para>History of borrowing</para></listitem>
+					<listitem><para>History of borrowing</para>
+						<orderedlist> 
+							<listitem><para>History of a User</para></listitem>
+							<listitem><para>History of a Copy (Edition?, Book?)</para></listitem>
+						</orderedlist>
+					</listitem>
+					<listitem><para>Statistical information</para>
+						<orderedlist> 
+							<listitem><para>Most read Books</para></listitem>
+							<listitem><para>Most borrowing Users</para></listitem>
+						</orderedlist> 
+					</listitem>
+					<listitem><para>Recommending Books to buy</para></listitem>
+					<listitem><para>Announcing bought Book</para>
+						<orderedlist> 
+							<listitem><para>Waitng list for a Book</para></listitem>
+						</orderedlist> 
+					</listitem>
 					<listitem><para>Amazon API integration. Book information, reviews.</para></listitem>
 				</orderedlist>
 			</listitem>
