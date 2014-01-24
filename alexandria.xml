@@ -316,6 +316,7 @@
 
 	<section xml:id="use-cases"> <title>Use-cases</title>
 		<orderedlist> 
+			<title>List of use-cases</title>
 			<listitem><para>Primary use-cases. Related to borrowing and returning of the books and of managing them. They make a library.</para>
 				<orderedlist>
 					<listitem>	
@@ -397,6 +398,33 @@
 				</orderedlist>
 			</listitem>
 		</orderedlist>
+
+		<section><title>Use-cases</title>
+			<variablelist>
+				<varlistentry>
+					<term>Title</term>
+					<listitem><para>Browsing books</para></listitem>
+				</varlistentry>
+				<varlistentry>
+					<term>Primary actor</term>
+					<listitem><para>any User (even not logged in)</para></listitem>
+				</varlistentry>
+				<varlistentry>
+					<term>Scope</term>
+					<listitem><para>...</para></listitem>
+				</varlistentry>
+				<varlistentry>
+					<term>Level</term>
+					<listitem><para>...</para></listitem>
+				</varlistentry>
+				<varlistentry>
+					<term>Story</term>
+					<listitem>
+						<para>...</para>
+					</listitem>
+				</varlistentry>
+			</variablelist>
+		</section>
 	</section>
 
 </article>
