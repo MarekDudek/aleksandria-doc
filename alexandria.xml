@@ -411,16 +411,23 @@
 				</varlistentry>
 				<varlistentry>
 					<term>Scope</term>
-					<listitem><para>...</para></listitem>
+					<listitem>
+						<para>black-box</para>
+						<para>hides how Library owned and User-owned books differ</para>
+						<para>hides Title vs Edition vs Copy distinctions</para>
+					</listitem>
 				</varlistentry>
 				<varlistentry>
 					<term>Level</term>
-					<listitem><para>...</para></listitem>
+					<listitem><para>user-goal</para></listitem>
 				</varlistentry>
 				<varlistentry>
 					<term>Story</term>
 					<listitem>
-						<para>...</para>
+						<para>User can view all the books in the library together with information about their availability</para>
+						<para>List is pageable with configurable page size</para>
+						<para>? List is sortable by title, edition year, author?</para>
+						<para>? List is filterable by title, edition year range, author, category?, tag?, description??</para>
 					</listitem>
 				</varlistentry>
 			</variablelist>
