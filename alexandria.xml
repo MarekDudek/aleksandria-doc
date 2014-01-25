@@ -405,12 +405,12 @@
 				<variablelist>
 					<varlistentry>
 						<term>Primary actor</term>
-						<listitem><para>any User (even not logged in)</para></listitem>
+						<listitem><para>any User</para></listitem>
 					</varlistentry>
 					<varlistentry>
 						<term>Scope</term>
 						<listitem>
-							<para>black-box</para>
+							<para>system, black-box</para>
 							<para>hides how Library owned and User-owned books differ</para>
 							<para>hides Title vs Edition vs Copy distinctions</para>
 						</listitem>
@@ -426,6 +426,94 @@
 							<para>List is pageable with configurable page size</para>
 							<para>? List is sortable by title, edition year, author?</para>
 							<para>? List is filterable by title, edition year range, author, category?, tag?, description??</para>
+						</listitem>
+					</varlistentry>
+				</variablelist>
+			</section>
+
+			<section xml:id='uc-borrowing-and-returning-copy'><title>Borrowing and Returning a Copy</title>
+				<variablelist>
+					<varlistentry>
+						<term>Primary actor</term>
+						<listitem><para>Authenticated User</para></listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Scope</term>
+						<listitem>
+							<para>organisation, white-box</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Level</term>
+						<listitem><para>summary</para></listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Stakeholders and Interests</term>
+						<listitem>
+							<para>Authenticated User (Borrower) and Lender</para>
+							<para>Borrower has to have his Copy reserversion observed over other User that came for the same Copy without making reservation</para>
+							<para>Borrower has to be protected against false claims that he physically got the book that he didn't</para>
+							<para>Lender has to be protected against false claims that the book was physically returned when it didn't</para>
+							<para>Individual Lender may refuse to borrow a Copy</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Story</term>
+						<listitem>
+							<orderedlist>
+								<listitem><para>Borrower reserves a Copy of an Edition</para></listitem>
+								<listitem><para>Borrower physically obtains a Copy (outside of the system)</para></listitem>
+								<listitem><para>Lender aknowledes that a Copy is borrowed to the User</para></listitem>
+								<listitem><para>Borrower confirms that a Copy was borrowed by him</para></listitem>
+								<listitem><para>Borrower reads the book (outside of the system)</para></listitem>
+								<listitem><para>Borrower physically returns a Copy to the Lender</para></listitem>
+								<listitem><para>Lender confirms that a Copy was returned</para></listitem>
+							</orderedlist>
+						</listitem>
+					</varlistentry>
+				</variablelist>
+			</section>
+
+			<section xml:id='uc-reserving-copy'><title>Reserving a Copy for Borrowing</title>
+				<variablelist>
+					<varlistentry>
+						<term>Primary actor</term>
+						<listitem><para>Authenticated User</para></listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Scope</term>
+						<listitem>
+							<para>system, black-box</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Level</term>
+						<listitem><para>user-goal</para></listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Precondition</term>
+						<listitem>
+							<para>User is logged-in</para>
+							<para>User is browsing Books</para>
+							<para>a Copy of an Edition of a Title is available</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Story</term>
+						<listitem>
+							<orderedlist>
+								<listitem><para>User chooses to borrow particular Edition</para></listitem>
+								<listitem><para>User is presented with detailed information about Edition and Title and the Owner of a Copy</para></listitem>
+								<listitem><para>User confirms his decision</para></listitem>
+								<listitem><para>System aknowledes decision</para>
+									<orderedlist>
+										<listitem><para>System makes a Copy of an Edition reserved for the User</para></listitem>
+										<listitem><para>System provides information where the User may get a Copy</para></listitem>
+										<listitem><para>System notifies Owner(s) of a Copy about reservation</para></listitem>
+									</orderedlist>
+								</listitem>
+								<listitem><para>User goes to Owner's location to physically take a Copy (outside of the system)</para></listitem>
+							</orderedlist>
 						</listitem>
 					</varlistentry>
 				</variablelist>
