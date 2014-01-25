@@ -410,7 +410,10 @@
 					<varlistentry>
 						<term>Scope</term>
 						<listitem>
-							<para>system, black-box</para>
+							<para>
+								<inlinemediaobject><imageobject><imagedata fileref="images/icons/system-black-box.png" /></imageobject></inlinemediaobject>
+								system, black-box
+							</para>
 							<para>hides how Library owned and User-owned books differ</para>
 							<para>hides Title vs Edition vs Copy distinctions</para>
 						</listitem>
@@ -440,7 +443,10 @@
 					<varlistentry>
 						<term>Scope</term>
 						<listitem>
-							<para>organisation, white-box</para>
+							<para> 
+								<inlinemediaobject><imageobject><imagedata fileref="images/icons/organisation-white-box.png" /></imageobject></inlinemediaobject>
+								organisation, white-box
+							</para>
 						</listitem>
 					</varlistentry>
 					<varlistentry>
@@ -483,7 +489,10 @@
 					<varlistentry>
 						<term>Scope</term>
 						<listitem>
-							<para>system, black-box</para>
+							<para>
+								<inlinemediaobject><imageobject><imagedata fileref="images/icons/system-black-box.png" /></imageobject></inlinemediaobject>
+								system, black-box
+							</para>
 						</listitem>
 					</varlistentry>
 					<varlistentry>
