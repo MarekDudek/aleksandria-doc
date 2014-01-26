@@ -312,7 +312,7 @@
 	<section xml:id="use-cases"> <title>Use-cases</title>
 		<section xml:id='use-cases-list'><title>Preliminary list of use-cases</title>
 			<orderedlist> 
-				<listitem><para>Primary use-cases. Related to borrowing and returning of the books and of managing them. They make a library.</para>
+				<listitem><para>Primary use-cases. Related to borrowing and returning of the books and to managing them. They make the library a library.</para>
 					<orderedlist>
 						<listitem><para>Browsing books</para></listitem>
 						<listitem><para>Borrowing a Copy</para></listitem>
@@ -331,6 +331,8 @@
 							</orderedlist>
 							<para>Go for multiple libraries from the beginning or start with single? Kind of artificially prevents developing deep model of a book.</para>
 						</listitem>	
+						<listitem><para>Copy management</para></listitem>
+						<listitem><para>Edition management</para></listitem>
 						<listitem><para>Authorisation and authorisation. </para>
 							<para>
 								Neccessary for any restrictions involved in making borrowing and lending an honest transaction. 
@@ -356,8 +358,7 @@
 				</listitem>
 				<listitem><para>Secondary use-cases.</para>
 					<orderedlist>
-						<listitem><para>Copy management</para></listitem>
-						<listitem><para>Edition management</para></listitem>
+						<listitem><para>Waiting lists for any Copy of an Edition</para></listitem>
 						<listitem><para>History of borrowing</para>
 							<orderedlist> 
 								<listitem><para>History of a User</para></listitem>
