@@ -474,17 +474,67 @@
 						</listitem>
 					</varlistentry>
 					<varlistentry>
-						<term>Story</term>
+						<term>Main Success Scenario</term>
 						<listitem>
 							<orderedlist>
-								<listitem><para>Borrower reserves a Copy of an Edition</para></listitem>
-								<listitem><para>Borrower physically obtains a Copy (outside of the system)</para></listitem>
-								<listitem><para>Lender aknowledes that a Copy is borrowed to the User</para></listitem>
-								<listitem><para>Borrower confirms that a Copy was borrowed by him</para></listitem>
+								<listitem><para>Borrower physically meets a Lender at the place where Copy is stored (outside of the system)</para></listitem>
+								<listitem><para>Lender physically gives a Copy to Borrower (outside of the system)</para></listitem>
+								<listitem><para>Lender marks the Copy as borrowed by the User</para></listitem>
+								<listitem><para>Borrower confirms that the Copy was borrowed by him</para></listitem>
 								<listitem><para>Borrower reads the book (outside of the system)</para></listitem>
-								<listitem><para>Borrower physically returns a Copy to the Lender</para></listitem>
-								<listitem><para>Lender confirms that a Copy was returned</para></listitem>
+								<listitem><para>Borrower physically returns the Copy to the Lender (outside of the system)</para></listitem>
+								<listitem><para>Borrower marks that the Copy was returned</para></listitem>
+								<listitem><para>Lender confirms that the Copy was returned</para></listitem>
 							</orderedlist>
+							<para>
+								<itemizedlist>
+									<para>Reasons why both act of borrowing and act of lending has to be confirmed by specific party but may also be marked by the oposite one</para>
+									<listitem>
+										<para>	To ensure that physical exchange really happened. 
+											Simple protocol: the party that assums custody of a book has to confirm it - the other party doesn't. 
+											Any dispute is resolved outside of the system. 
+											In this case events of marking a Copy as borrowed (by Lender) or returned (by Borrower) may provide some grounds.
+										</para>
+									</listitem>
+									<listitem><para>Status of the book should be communicated as soon as possible for the benefit of other readers.</para></listitem>
+								</itemizedlist>
+								
+							</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Extensions</term>
+						<listitem>
+							<itemizedlist>
+								<listitem>
+									<para>(1) Optionally, before physically meeting Lender for the Copy, Borrower reserves a Copy of an Edition for Borrowing</para>
+									<para>TODO: Summary-scoped UC for managing Book Reservations</para>
+								</listitem>
+								<listitem>
+									<para>(2) Optionally, Individual Lender may refuse to Lend a Copy to the User. This ends scenario.</para>
+									<para>TODO: If Book Reservation was made it is canceled for refused User.</para>
+									<para>TODO: Summary-scoped UC for Notifications</para>
+									<para>TODO: Notifications are sent to other on Waiting List for this Copy, Edition (and Book?)</para>
+								</listitem>
+								<listitem>
+									<para>(3-4) Lender needs not to mark Copy as borrowed, it should be enough that Borrower confirmed</para>
+								</listitem>
+								<listitem>
+									<para>	
+										(3-4) Borrower may neglect that he borrowed a Copy after seeing Lender's marking. Scenario interrupts until resolved outside of the system.
+										TODO: Scenario to set Copy's status straight. 
+									</para>
+								</listitem>
+								<listitem>
+									<para>(7-8) Borrower needs not to mark Copy as returned (ready to borrow), it should be enough that Lender confirmed</para>
+								</listitem>
+								<listitem>
+									<para>	
+										(7-8) Lender may neglect that the Copy was returned. Scenario interrupts until resolved outside of the system.
+										TODO: Scenario to set Copy's status straight. 
+									</para>
+								</listitem>
+							</itemizedlist>
 						</listitem>
 					</varlistentry>
 				</variablelist>
