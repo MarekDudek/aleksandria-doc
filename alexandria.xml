@@ -328,10 +328,10 @@
 							<orderedlist>
 								<listitem><para>Adding a book by Individual Lender</para></listitem>
 								<listitem><para>Removing a book of an Invididual Lender</para></listitem>
+								<listitem><para>Copy and Edition management</para></listitem>
 							</orderedlist>
 							<para>Go for multiple libraries from the beginning or start with single? Kind of artificially prevents developing deep model of a book.</para>
 						</listitem>	
-						<listitem><para>Copy and Edition management</para></listitem>
 						<listitem><para>Authorisation and authorisation. </para>
 							<orderedlist>
 								<listitem><para>Users and Teams management</para></listitem>
@@ -391,10 +391,7 @@
 					<varlistentry>
 						<term>Scope</term>
 						<listitem>
-							<para>
-								<inlinemediaobject><imageobject><imagedata fileref="images/icons/system-black-box.png" /></imageobject></inlinemediaobject>
-								system, black-box
-							</para>
+							<para><inlinemediaobject><imageobject><imagedata fileref="images/icons/system-black-box.png" /></imageobject></inlinemediaobject>system, black-box</para>
 							<para>hides how Library owned and User-owned books differ</para>
 							<para>hides Title vs Edition vs Copy distinctions</para>
 						</listitem>
@@ -402,10 +399,7 @@
 					<varlistentry>
 						<term>Level</term>
 						<listitem>
-							<para>
-								<inlinemediaobject><imageobject><imagedata fileref="images/icons/user-goal.png" /></imageobject></inlinemediaobject>
-								user-goal
-							</para>
+							<para><inlinemediaobject><imageobject><imagedata fileref="images/icons/user-goal.png" /></imageobject></inlinemediaobject>user-goal</para>
 						</listitem>
 					</varlistentry>
 					<varlistentry>
@@ -429,19 +423,13 @@
 					<varlistentry>
 						<term>Scope</term>
 						<listitem>
-							<para> 
-								<inlinemediaobject><imageobject><imagedata fileref="images/icons/organisation-white-box.png" /></imageobject></inlinemediaobject>
-								organisation, white-box
-							</para>
+							<para><inlinemediaobject><imageobject><imagedata fileref="images/icons/organisation-white-box.png" /></imageobject></inlinemediaobject>organisation, white-box</para>
 						</listitem>
 					</varlistentry>
 					<varlistentry>
 						<term>Level</term>
 						<listitem>
-							<para>
-								<inlinemediaobject><imageobject><imagedata fileref="images/icons/summary.png" /></imageobject></inlinemediaobject>
-								summary
-							</para>
+							<para><inlinemediaobject><imageobject><imagedata fileref="images/icons/summary.png" /></imageobject></inlinemediaobject>summary</para>
 						</listitem>
 					</varlistentry>
 					<varlistentry>
@@ -478,7 +466,7 @@
 											In this case events of marking a Copy as borrowed (by Lender) or returned (by Borrower) may provide some grounds.
 										</para>
 									</listitem>
-									<listitem><para>Status of the book should be communicated as soon as possible for the benefit of other readers.</para></listitem>
+									<listitem><para>Status of the Copy should be communicated as soon as possible for the benefit of other Borrowers.</para></listitem>
 								</itemizedlist>
 								
 							</para>
@@ -523,24 +511,45 @@
 				<variablelist>
 					<varlistentry>
 						<term>Primary actor</term>
-						<listitem><para>Lender - member of the Team that manages a Library or Individual User, any User that is willing to Lend his Copy of a Book</para></listitem>
+						<listitem><para>Lender - member of the Team that manages a Library or Individual User, any Individual User that is willing to Lend his Copy of a Book</para></listitem>
 					</varlistentry>
 					<varlistentry>
 						<term>Scope</term>
 						<listitem>
-							<para>
-								<inlinemediaobject><imageobject><imagedata fileref="images/icons/organisation-white-box.png" /></imageobject></inlinemediaobject>
-								organisation, white-box
-							</para>
+							<para><inlinemediaobject><imageobject><imagedata fileref="images/icons/organisation-black-box.png" /></imageobject></inlinemediaobject> organisation, black-box</para>
 						</listitem>
 					</varlistentry>
 					<varlistentry>
 						<term>Level</term>
 						<listitem>
-							<para>
-								<inlinemediaobject><imageobject><imagedata fileref="images/icons/summary.png" /></imageobject></inlinemediaobject>
-								summary
-							</para>
+							<para><inlinemediaobject><imageobject><imagedata fileref="images/icons/summary.png" /></imageobject></inlinemediaobject>summary</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Stakeholders and Interests</term>
+						<listitem>
+							<para>Distinctions between Book, Edition and Copy should be transparent to a user or at least user-friendly</para>
+							<para>Distinction between Library (Team) owned Copy and Individual User owned Copy should be handled</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Main Success Scenario</term>
+						<listitem>
+							<orderedlist>
+								<listitem><para>user adds/removes a Copy of an Edition of a Book</para></listitem>
+								<listitem><para>user Administrator adds/removes another Copy of an Edition</para></listitem>
+								<listitem><para>user Administrator adds/removes another Edition of a Book</para></listitem>
+								<listitem><para>user Administrator merges/splits two Copies of the same Edition</para></listitem>
+								<listitem><para>user Administrator merges/splits two Editions of the same Book</para></listitem>
+							</orderedlist>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Extensions</term>
+						<listitem>
+							<orderedlist>
+								<listitem><para>(3) Adding an Edition with/without a Copy</para></listitem>
+							</orderedlist>
 						</listitem>
 					</varlistentry>
 				</variablelist>
