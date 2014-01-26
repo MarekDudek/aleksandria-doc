@@ -274,12 +274,6 @@
 	<section xml:id="steps"> <title>Steps</title>
 		<procedure>
 			<title>Plan of development of the application</title>
-			<step><para>rewrite to text format</para>
-				<substeps>
-					<step><para>divide to separate documents</para></step>
-					<step><para>allow adding pictures</para></step>
-				</substeps> 
-			</step>
 			<step><para>navigation map?</para>
 				<substeps>
 					<step><para>would allow taking User's point of view</para></step>
@@ -306,6 +300,7 @@
 									<step><para>Java interface used in custom JSP tags?</para></step>
 								</substeps>
 							</step>
+							<step><para>JBehave is a possibility</para></step>
 						</substeps>
 					</step>
 					<step><para>integration test with some in-memory DB?</para></step>
@@ -319,27 +314,22 @@
 			<orderedlist> 
 				<listitem><para>Primary use-cases. Related to borrowing and returning of the books and of managing them. They make a library.</para>
 					<orderedlist>
+						<listitem><para>Browsing books</para></listitem>
+						<listitem><para>Borrowing a Copy</para></listitem>
+						<listitem><para>Returning a Copy</para></listitem>
 						<listitem>	
 							<para>Books that belong to a library</para>
 							<orderedlist>
-								<listitem><para>Browsing books in library</para></listitem>
-								<listitem><para>Borrowing books in library</para></listitem>
-								<listitem><para>Returning a book from library</para></listitem>
 								<listitem><para>Adding a book to a library</para></listitem>
 								<listitem><para>Removing a book from a library</para></listitem>
 							</orderedlist>
 						</listitem>	
 						<listitem><para>Books that belong to individual users</para>
 							<orderedlist>
-								<listitem><para>Browsing books in library</para></listitem>
-								<listitem><para>Borrowing books in library</para></listitem>
-								<listitem><para>Returning a book from library</para></listitem>
-								<listitem><para>Adding a book to a library</para></listitem>
-								<listitem><para>Removing a book from a library</para></listitem>
+								<listitem><para>Adding a book by Individual Lender</para></listitem>
+								<listitem><para>Removing a book of an Invididual Lender</para></listitem>
 							</orderedlist>
-							<para>Treat them like separate uses-cases or make them extend library book use-cases?</para>
 							<para>Go for multiple libraries from the beginning or start with single? Kind of artificially prevents developing deep model of a book.</para>
-							<para>Both borrowing and returning has to involve interactions by both parties so as to prevent frauds.</para>
 						</listitem>	
 						<listitem><para>Authorisation and authorisation. </para>
 							<para>
@@ -490,7 +480,8 @@
 								<itemizedlist>
 									<para>Reasons why both act of borrowing and act of lending has to be confirmed by specific party but may also be marked by the oposite one</para>
 									<listitem>
-										<para>	To ensure that physical exchange really happened. 
+										<para>	
+											To ensure that physical exchange really happened. 
 											Simple protocol: the party that assums custody of a book has to confirm it - the other party doesn't. 
 											Any dispute is resolved outside of the system. 
 											In this case events of marking a Copy as borrowed (by Lender) or returned (by Borrower) may provide some grounds.
@@ -538,20 +529,21 @@
 						</listitem>
 					</varlistentry>
 				</variablelist>
+				<para>TODO: Develop UML State-machine chart for Copy's state (if it is modeled as state, most probably yes).</para>
 			</section>
 
-			<section xml:id='uc-reserving-copy'><title>Reserving a Copy for Borrowing</title>
+			<section xml:id='uc-books-management'><title>Book management</title>
 				<variablelist>
 					<varlistentry>
 						<term>Primary actor</term>
-						<listitem><para>Authenticated User</para></listitem>
+						<listitem><para>Lender - member of the Team that manages a Library or Individual User, any User that is willing to Lend his Copy of a Book</para></listitem>
 					</varlistentry>
 					<varlistentry>
 						<term>Scope</term>
 						<listitem>
 							<para>
-								<inlinemediaobject><imageobject><imagedata fileref="images/icons/system-black-box.png" /></imageobject></inlinemediaobject>
-								system, black-box
+								<inlinemediaobject><imageobject><imagedata fileref="images/icons/organisation-white-box.png" /></imageobject></inlinemediaobject>
+								organisation, white-box
 							</para>
 						</listitem>
 					</varlistentry>
@@ -559,39 +551,14 @@
 						<term>Level</term>
 						<listitem>
 							<para>
-								<inlinemediaobject><imageobject><imagedata fileref="images/icons/user-goal.png" /></imageobject></inlinemediaobject>
-								user-goal
+								<inlinemediaobject><imageobject><imagedata fileref="images/icons/summary.png" /></imageobject></inlinemediaobject>
+								summary
 							</para>
-						</listitem>
-					</varlistentry>
-					<varlistentry>
-						<term>Precondition</term>
-						<listitem>
-							<para>User is logged-in</para>
-							<para>User is browsing Books</para>
-							<para>a Copy of an Edition of a Title is available</para>
-						</listitem>
-					</varlistentry>
-					<varlistentry>
-						<term>Story</term>
-						<listitem>
-							<orderedlist>
-								<listitem><para>User chooses to borrow particular Edition</para></listitem>
-								<listitem><para>User is presented with detailed information about Edition and Title and the Owner of a Copy</para></listitem>
-								<listitem><para>User confirms his decision</para></listitem>
-								<listitem><para>System aknowledes decision</para>
-									<orderedlist>
-										<listitem><para>System makes a Copy of an Edition reserved for the User</para></listitem>
-										<listitem><para>System provides information where the User may get a Copy</para></listitem>
-										<listitem><para>System notifies Owner(s) of a Copy about reservation</para></listitem>
-									</orderedlist>
-								</listitem>
-								<listitem><para>User goes to Owner's location to physically take a Copy (outside of the system)</para></listitem>
-							</orderedlist>
 						</listitem>
 					</varlistentry>
 				</variablelist>
 			</section>
+
 		</section>
 	</section>
 
