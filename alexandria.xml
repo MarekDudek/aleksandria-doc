@@ -331,36 +331,32 @@
 							</orderedlist>
 							<para>Go for multiple libraries from the beginning or start with single? Kind of artificially prevents developing deep model of a book.</para>
 						</listitem>	
-						<listitem><para>Copy management</para></listitem>
-						<listitem><para>Edition management</para></listitem>
+						<listitem><para>Copy and Edition management</para></listitem>
 						<listitem><para>Authorisation and authorisation. </para>
+							<orderedlist>
+								<listitem><para>Users and Teams management</para></listitem>
+							</orderedlist>
+							<para>Domain of authentication system. Users, Teams and Roles. <remark>Management of Roles is outside the system</remark></para>
 							<para>
 								Neccessary for any restrictions involved in making borrowing and lending an honest transaction. 
 								Users cannot possess possibility of a theft by claiming that the book was returned. 
 								Users also cannot frame other users by claiming that they borrowed.
 							</para>
-							<orderedlist>
-								<listitem><para>Domain of authentication system</para>
-									<orderedlist>
-										<listitem><para>Users</para></listitem>
-										<listitem><para>Teams</para></listitem>
-										<listitem><para>Roles</para></listitem>
-									</orderedlist>
-									<para>
-										Model has to be plugable to make it possible use external authentication/authentication system. 
-										It would be comfortable if it was also suitable for chosen technlogy, probably Spring Security (ACEGI).
-									</para>
-								</listitem>
-
-							</orderedlist>
+							<para>
+								Model has to be plugable to make it possible use external authentication/authentication system. 
+								It would be comfortable if it was also suitable for chosen technlogy, probably Spring Security (ACEGI).
+							</para>
 						</listitem>
 					</orderedlist>
 				</listitem>
 				<listitem><para>Secondary use-cases.</para>
 					<orderedlist>
 						<listitem><para>Waiting lists for any Copy of an Edition</para></listitem>
+						<listitem><para>Recommending Books to buy</para></listitem>
+						<listitem><para>Announcing bought Book</para></listitem>
 						<listitem><para>History of borrowing</para>
 							<orderedlist> 
+								<listitem><para>Full audit</para></listitem>
 								<listitem><para>History of a User</para></listitem>
 								<listitem><para>History of a Copy (Edition?, Book?)</para></listitem>
 							</orderedlist>
@@ -369,12 +365,6 @@
 							<orderedlist> 
 								<listitem><para>Most read Books</para></listitem>
 								<listitem><para>Most borrowing Users</para></listitem>
-							</orderedlist> 
-						</listitem>
-						<listitem><para>Recommending Books to buy</para></listitem>
-						<listitem><para>Announcing bought Book</para>
-							<orderedlist> 
-								<listitem><para>Waitng list for a Book</para></listitem>
 							</orderedlist> 
 						</listitem>
 						<listitem><para>Notifications for users</para>
