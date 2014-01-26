@@ -420,7 +420,12 @@
 					</varlistentry>
 					<varlistentry>
 						<term>Level</term>
-						<listitem><para>user-goal</para></listitem>
+						<listitem>
+							<para>
+								<inlinemediaobject><imageobject><imagedata fileref="images/icons/user-goal.png" /></imageobject></inlinemediaobject>
+								user-goal
+							</para>
+						</listitem>
 					</varlistentry>
 					<varlistentry>
 						<term>Story</term>
@@ -451,7 +456,12 @@
 					</varlistentry>
 					<varlistentry>
 						<term>Level</term>
-						<listitem><para>summary</para></listitem>
+						<listitem>
+							<para>
+								<inlinemediaobject><imageobject><imagedata fileref="images/icons/summary.png" /></imageobject></inlinemediaobject>
+								summary
+							</para>
+						</listitem>
 					</varlistentry>
 					<varlistentry>
 						<term>Stakeholders and Interests</term>
@@ -497,7 +507,12 @@
 					</varlistentry>
 					<varlistentry>
 						<term>Level</term>
-						<listitem><para>user-goal</para></listitem>
+						<listitem>
+							<para>
+								<inlinemediaobject><imageobject><imagedata fileref="images/icons/user-goal.png" /></imageobject></inlinemediaobject>
+								user-goal
+							</para>
+						</listitem>
 					</varlistentry>
 					<varlistentry>
 						<term>Precondition</term>
