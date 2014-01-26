@@ -448,11 +448,11 @@
 							<orderedlist>
 								<listitem><para>Borrower physically meets a Lender at the place where Copy is stored (outside of the system)</para></listitem>
 								<listitem><para>Lender physically gives a Copy to Borrower (outside of the system)</para></listitem>
-								<listitem><para>Lender marks the Copy as borrowed by the User</para></listitem>
+								<listitem><para>Lender marks the Copy as borrowed by the User (optional but recommended)</para></listitem>
 								<listitem><para>Borrower confirms that the Copy was borrowed by him</para></listitem>
 								<listitem><para>Borrower reads the book (outside of the system)</para></listitem>
 								<listitem><para>Borrower physically returns the Copy to the Lender (outside of the system)</para></listitem>
-								<listitem><para>Borrower marks that the Copy was returned</para></listitem>
+								<listitem><para>Borrower marks that the Copy was returned (optional but recommended)</para></listitem>
 								<listitem><para>Lender confirms that the Copy was returned</para></listitem>
 							</orderedlist>
 							<para>
@@ -468,8 +468,8 @@
 									</listitem>
 									<listitem><para>Status of the Copy should be communicated as soon as possible for the benefit of other Borrowers.</para></listitem>
 								</itemizedlist>
-								
 							</para>
+							<remark>Only four system use-cases with two optional.</remark>
 						</listitem>
 					</varlistentry>
 					<varlistentry>
@@ -537,10 +537,11 @@
 						<listitem>
 							<orderedlist>
 								<listitem><para>user adds/removes a Copy of an Edition of a Book</para></listitem>
-								<listitem><para>user Administrator adds/removes another Copy of an Edition</para></listitem>
-								<listitem><para>user Administrator adds/removes another Edition of a Book</para></listitem>
-								<listitem><para>user Administrator merges/splits two Copies of the same Edition</para></listitem>
-								<listitem><para>user Administrator merges/splits two Editions of the same Book</para></listitem>
+								<listitem><para>user adds/removes another Copy of an Edition</para></listitem>
+								<listitem><para>user adds/removes another Edition of a Book</para></listitem>
+								<listitem><para>user merges/splits two Copies of the same Edition</para></listitem>
+								<listitem><para>user merges/splits two Editions of the same Book</para></listitem>
+								<listitem><para>user removes Editions and Books that don't have a Copy</para></listitem>
 							</orderedlist>
 						</listitem>
 					</varlistentry>
@@ -549,6 +550,47 @@
 						<listitem>
 							<orderedlist>
 								<listitem><para>(3) Adding an Edition with/without a Copy</para></listitem>
+								<listitem><para>(4) Adding a Book with/without an Edition</para></listitem>
+							</orderedlist>
+						</listitem>
+					</varlistentry>
+				</variablelist>
+			</section>
+			
+			<section xml:id='uc-library-management'><title>Library management</title>
+				<variablelist>
+					<varlistentry>
+						<term>Primary actor</term>
+						<listitem><para>Administrator</para></listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Scope</term>
+						<listitem>
+							<para><inlinemediaobject><imageobject><imagedata fileref="images/icons/organisation-black-box.png" /></imageobject></inlinemediaobject> organisation, black-box</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Level</term>
+						<listitem>
+							<para><inlinemediaobject><imageobject><imagedata fileref="images/icons/summary.png" /></imageobject></inlinemediaobject>summary</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Stakeholders and Interests</term>
+						<listitem>
+							<para>It should be possible to enforce policies of access of Lenders to Copies of a Library.</para>
+							<para>It should be possible to enforce privileges of Copy's ownership. It should be transparent whether it's Team or Individual User</para>
+							<para>It should be possible to enforce Team membership.</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Main Success Scenario</term>
+						<listitem>
+							<orderedlist>
+								<listitem><para>Administrator adds/removes a Team</para></listitem>
+								<listitem><para>Administrator adds/removes a User</para></listitem>
+								<listitem><para>Administrator grants/revokes Team Leader role for a Team</para></listitem>
+								<listitem><para>Administrator or Team Leader adds/removes users from Teams</para></listitem>
 							</orderedlist>
 						</listitem>
 					</varlistentry>
