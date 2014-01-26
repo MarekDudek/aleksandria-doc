@@ -499,37 +499,33 @@
 							<itemizedlist>
 								<listitem>
 									<para>(1) Optionally, before physically meeting Lender for the Copy, Borrower reserves a Copy of an Edition for Borrowing</para>
-									<para>TODO: Summary-scoped UC for managing Book Reservations</para>
+									<remark>TODO: Summary-scoped UC for managing Book Reservations</remark>
 								</listitem>
 								<listitem>
 									<para>(2) Optionally, Individual Lender may refuse to Lend a Copy to the User. This ends scenario.</para>
-									<para>TODO: If Book Reservation was made it is canceled for refused User.</para>
-									<para>TODO: Summary-scoped UC for Notifications</para>
-									<para>TODO: Notifications are sent to other on Waiting List for this Copy, Edition (and Book?)</para>
+									<remark>TODO: If Book Reservation was made it is canceled for refused User.</remark>
+									<remark>TODO: Summary-scoped UC for Notifications</remark>
+									<remark>TODO: Notifications are sent to other on Waiting List for this Copy, Edition (and Book?)</remark>
 								</listitem>
 								<listitem>
 									<para>(3-4) Lender needs not to mark Copy as borrowed, it should be enough that Borrower confirmed</para>
 								</listitem>
 								<listitem>
-									<para>	
-										(3-4) Borrower may neglect that he borrowed a Copy after seeing Lender's marking. Scenario interrupts until resolved outside of the system.
-										TODO: Scenario to set Copy's status straight. 
-									</para>
+									<para>(3-4) Borrower may neglect that he borrowed a Copy after seeing Lender's marking. Scenario interrupts until resolved outside of the system.</para>
+									<remark>TODO: Scenario to set Copy's status straight.</remark>
 								</listitem>
 								<listitem>
 									<para>(7-8) Borrower needs not to mark Copy as returned (ready to borrow), it should be enough that Lender confirmed</para>
 								</listitem>
 								<listitem>
-									<para>	
-										(7-8) Lender may neglect that the Copy was returned. Scenario interrupts until resolved outside of the system.
-										TODO: Scenario to set Copy's status straight. 
-									</para>
+									<para>(7-8) Lender may neglect that the Copy was returned. Scenario interrupts until resolved outside of the system.</para>
+									<remark>TODO: Scenario to set Copy's status straight.</remark>
 								</listitem>
 							</itemizedlist>
 						</listitem>
 					</varlistentry>
 				</variablelist>
-				<para>TODO: Develop UML State-machine chart for Copy's state (if it is modeled as state, most probably yes).</para>
+				<remark>TODO: Develop UML State-machine chart for Copy's state (if it is modeled as state, most probably yes).</remark>
 			</section>
 
 			<section xml:id='uc-books-management'><title>Book management</title>
