@@ -351,6 +351,7 @@
 				</listitem>
 				<listitem><para>Secondary use-cases.</para>
 					<orderedlist>
+						<listitem><para>Author management</para></listitem>
 						<listitem><para>Waiting lists for any Copy of an Edition</para></listitem>
 						<listitem><para>Recommending Books to buy</para></listitem>
 						<listitem><para>Announcing bought Book</para></listitem>
